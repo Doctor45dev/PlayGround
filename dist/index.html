@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0d17" />
+    <meta name="description" content="PlayGround — a tiny interactive canvas playground." />
+    <title>PlayGround</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <span class="badge"><span class="dot" aria-hidden="true"></span> live playground</span>
+        <h1>Play<span>Ground</span></h1>
+        <p class="lede">
+          A small interactive canvas experiment. Move your pointer, tap the screen,
+          and watch the field respond.
+        </p>
+        <div class="actions">
+          <button id="reseed" type="button">Reseed field</button>
+          <span class="hint" id="hint">drag anywhere to stir the particles</span>
+        </div>
+      </header>
+      <section class="stage" aria-label="Interactive particle canvas">
+        <canvas id="field"></canvas>
+        <div class="stage-label" aria-hidden="true"><span id="count">0</span> particles</div>
+      </section>
+      <footer>
+        <span>Built with plain HTML, CSS and JavaScript.</span>
+        <span id="fps" aria-hidden="true">—</span>
+      </footer>
+    </main>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
